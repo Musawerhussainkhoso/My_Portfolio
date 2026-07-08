@@ -1,76 +1,118 @@
-.skill-card,
-.skill-card.glass-premium {
+.skill-card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: var(--space-3) var(--space-2);
-  text-align: center;
+  padding: var(--space-3);
   border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.75);
-  border: 1.5px solid var(--surface-border);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  transition: all var(--transition);
+  background: var(--bg-alt);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
 }
 
-[data-theme="dark"] .skill-card,
-[data-theme="dark"] .skill-card.glass-premium {
-  background: rgba(30, 15, 60, 0.65);
+[data-theme="dark"] .skill-card {
+  background: var(--bg-elevated);
 }
 
-.skill-card:hover,
-.skill-card.glass-premium:hover {
-  border-color: var(--skill-color, var(--primary-500));
+.skill-card:hover {
+  border-color: color-mix(in srgb, var(--skill-color) 45%, transparent);
+  box-shadow: var(--shadow-md), 0 8px 28px color-mix(in srgb, var(--skill-color) 12%, transparent);
 }
 
-.skill-card__icon-wrapper {
-  display: inline-flex;
+.skill-card__accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--skill-color), color-mix(in srgb, var(--skill-color) 50%, #fff));
+}
+
+.skill-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-1);
+  margin-bottom: var(--space-2);
+}
+
+.skill-card__icon-ring {
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  border-radius: var(--radius-md);
-  background: linear-gradient(135deg, var(--skill-color, #667eea)20, var(--skill-color, #667eea)10);
-  margin-bottom: 0.8rem;
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--skill-color) 14%, transparent),
+    color-mix(in srgb, var(--skill-color) 6%, transparent)
+  );
+  border: 1px solid color-mix(in srgb, var(--skill-color) 22%, transparent);
   transition: transform var(--transition);
 }
 
-.skill-card:hover .skill-card__icon-wrapper,
-.skill-card.glass-premium:hover .skill-card__icon-wrapper {
-  transform: scale(1.1) rotate(-5deg);
+.skill-card:hover .skill-card__icon-ring {
+  transform: scale(1.06);
 }
 
 .skill-card__icon {
-  font-size: 2.2rem;
-  transition: transform var(--transition);
+  font-size: 1.75rem;
+  color: var(--skill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card__badge {
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--skill-color);
+  background: color-mix(in srgb, var(--skill-color) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--skill-color) 20%, transparent);
+  white-space: nowrap;
 }
 
 .skill-card__name {
+  font-size: 1rem;
   font-weight: 700;
-  font-size: 0.95rem;
-  margin-bottom: 0.8rem;
-  color: var(--text);
+  color: var(--heading);
+  margin-bottom: var(--space-2);
   letter-spacing: -0.01em;
 }
 
-.skill-card__bar {
-  width: 100%;
-  height: 7px;
-  border-radius: var(--radius-full);
-  background: var(--surface-border);
-  overflow: hidden;
-  margin-bottom: 0.5rem;
+.skill-card__progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: auto;
 }
 
-.skill-card__fill {
+.skill-card__progress-track {
+  flex: 1;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--skill-color) 10%, var(--surface-border));
+  overflow: hidden;
+}
+
+.skill-card__progress-fill {
   height: 100%;
   border-radius: var(--radius-full);
-  transition: width var(--transition);
+  background: linear-gradient(90deg, var(--skill-color), color-mix(in srgb, var(--skill-color) 70%, #fff));
+  box-shadow: 0 0 8px color-mix(in srgb, var(--skill-color) 35%, transparent);
 }
 
 .skill-card__level {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--skill-color, var(--primary-500));
-  letter-spacing: 0.05em;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--skill-color);
+  min-width: 2.5rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
 }

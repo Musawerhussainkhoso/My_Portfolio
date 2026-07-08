@@ -27,31 +27,31 @@ export default function Services() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <FiGrid /> What I Offer
+            <FiGrid /> Service Offerings
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            My <span className="gradient-text">Services</span>
+            Professional <span className="gradient-text">Services</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Professional services across web development, data analysis, and
-            machine learning — available for freelance and full-time work.
+            End-to-end services in web development, data analysis, and machine learning —
+            available for freelance engagements and full-time opportunities.
           </motion.p>
         </div>
 
         {/* Services grid */}
         <section className="section">
           <SectionTitle
-            eyebrow="Professional Services"
-            title="How I Can Help"
-            subtitle="From building web apps to delivering data-driven insights and ML models."
+            eyebrow="Capabilities"
+            title="How I Can Add Value"
+            subtitle="From full-stack web applications to data-driven insights and machine learning solutions."
           />
           <motion.div
             className="services__grid"
@@ -84,10 +84,10 @@ export default function Services() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.6 }}
           >
-            <h2>Ready to start a project?</h2>
+            <h2>Ready to Discuss Your Project?</h2>
             <p>
-              Whether you need a website, a data dashboard, or a machine learning model,
-              let's discuss how I can help you achieve your goals.
+              Whether you require a web platform, an analytics dashboard, or a machine learning solution,
+              I am prepared to help you achieve your objectives with precision and professionalism.
             </p>
             <div className="services__cta-actions">
               <Button to="/contact" variant="primary">Get in Touch</Button>

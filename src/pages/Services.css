@@ -40,7 +40,7 @@
   width: 56px;
   height: 56px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, rgba(31, 111, 235, 0.12), rgba(45, 212, 191, 0.12));
+  background: linear-gradient(135deg, rgba(26, 39, 68, 0.08), rgba(201, 162, 39, 0.10));
   font-size: 1.6rem;
   color: var(--primary-500);
   margin-bottom: var(--space-2);

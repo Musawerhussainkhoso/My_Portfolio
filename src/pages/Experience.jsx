@@ -17,31 +17,31 @@ export default function Experience() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <FaBriefcase /> Career Path
+            <FaBriefcase /> Professional Background
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            My <span className="gradient-text">Experience</span>
+            Work <span className="gradient-text">Experience</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Internships, hands-on projects, and learning tracks that have shaped
-            my practical skills across development and data.
+            Internships, practicum work, and structured learning programs that have
+            developed my expertise across software development and data analysis.
           </motion.p>
         </div>
 
         {/* Timeline */}
         <section className="section">
           <SectionTitle
-            eyebrow="Timeline"
-            title="Professional & Learning Experience"
-            subtitle="A chronological view of my growth across software engineering, data analysis, and machine learning."
+            eyebrow="Career Timeline"
+            title="Professional & Academic Experience"
+            subtitle="A chronological record of my development across software engineering, data analysis, and machine learning."
           />
           <Timeline items={experience} />
         </section>

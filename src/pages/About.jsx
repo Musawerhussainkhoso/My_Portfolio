@@ -60,22 +60,22 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <FiZap /> About Me
+            <FiZap /> Professional Profile
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Turning Data Into <span className="gradient-text">Practical Solutions</span>
+            About <span className="gradient-text">Musawer Hussain</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            A data-focused developer and analyst dedicated to building useful tools,
-            reports, and mobile app ideas with real-world impact.
+            A dedicated software engineer and data analyst committed to delivering
+            practical, high-quality solutions across analytics, databases, and application development.
           </motion.p>
         </div>
 
@@ -98,9 +98,9 @@ export default function About() {
         {/* Professional intro */}
         <section className="section">
           <SectionTitle
-            eyebrow="Who I Am"
-            title="Professional Introduction"
-            subtitle="A brief overview of who I am and what I bring to the table."
+            eyebrow="Overview"
+            title="Professional Summary"
+            subtitle="A concise introduction to my background, expertise, and professional approach."
           />
           <motion.div
             className="about__intro glass"
@@ -132,9 +132,9 @@ export default function About() {
         <section className="section section--alt">
           <div className="container">
             <SectionTitle
-              eyebrow="My Journey"
-              title="Background & Goals"
-              subtitle="The paths I've taken and where I'm headed."
+              eyebrow="My Story"
+              title="Background & Aspirations"
+              subtitle="The experiences that shaped my career and the direction I am pursuing."
             />
             <motion.div
               className="about__cards"
@@ -169,8 +169,8 @@ export default function About() {
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.6 }}
             >
-              <h2>Want to know more?</h2>
-              <p>Check out my projects, skills, or download my full CV.</p>
+              <h2>Explore My Work & Credentials</h2>
+              <p>Review my project portfolio, technical skills, or download my full curriculum vitae.</p>
               <div className="about__cta-actions">
                 <Button to="/projects" variant="primary">View Projects <FaArrowRight /></Button>
                 <Button href="/Musawer_Hussain_CV.pdf" download variant="ghost">

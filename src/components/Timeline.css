@@ -34,7 +34,7 @@
   border-radius: 50%;
   background: var(--bg);
   border: 3px solid var(--primary-500);
-  box-shadow: 0 0 0 4px var(--bg), 0 0 12px rgba(31, 111, 235, 0.4);
+  box-shadow: 0 0 0 4px var(--bg), 0 0 12px rgba(201, 162, 39, 0.35);
   z-index: 1;
 }
 

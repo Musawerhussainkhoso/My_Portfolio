@@ -10,7 +10,7 @@ import { education } from '../data/education';
 import { experience } from '../data/experience';
 import { projects } from '../data/projects';
 import { services } from '../data/services';
-import { featuredSkills } from '../data/skills.jsx';
+import { featuredSkills, profileImage } from '../data/skills.jsx';
 import './Home.css';
 
 const containerVariants = {
@@ -48,6 +48,15 @@ export default function Home() {
             >
               Hi, I'm <span className="gradient-text">Musawer&nbsp;Hussain</span>
             </motion.h1>
+
+            <motion.p
+              className="hero__subtitle"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              Software Engineer &amp; Data Analyst
+            </motion.p>
 
             <motion.div
               className="hero__roles"
@@ -112,8 +121,11 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <div className="hero__photo-card glass-premium">
-              <img src="/profile-pic.svg" alt="Musawer Hussain" className="hero__photo" />
+            <div className="hero__photo-wrap">
+              <div className="hero__photo-glow hero__photo-glow--center" aria-hidden="true" />
+              <div className="hero__photo-glow hero__photo-glow--left" aria-hidden="true" />
+              <div className="hero__photo-glow hero__photo-glow--right" aria-hidden="true" />
+              <img src={profileImage} alt="Musawer Hussain" className="hero__photo" />
             </div>
           </motion.div>
         </div>
@@ -122,9 +134,9 @@ export default function Home() {
       <section id="about" className="section section--tight">
         <div className="container">
           <SectionTitle
-            eyebrow="About"
-            title="A refined profile for data, databases, and product-minded solutions"
-            subtitle="I bring a calm, structured approach to SQL, Python, dashboards, and app ideas that need to work in the real world."
+            eyebrow="About Me"
+            title="Engineering Solutions With Purpose"
+            subtitle="A disciplined approach to databases, analytics, and software — built for clarity, reliability, and real-world impact."
           />
           <div className="home__about-grid">
             <div className="glass home__about-card">
@@ -156,9 +168,9 @@ export default function Home() {
       <section id="skills" className="section">
         <div className="container">
           <SectionTitle
-            eyebrow="Capabilities"
-            title="Skills I Work With"
-            subtitle="A focused stack for data work, databases, automation, and modern app concepts."
+            eyebrow="Core Competencies"
+            title="Technical Expertise"
+            subtitle="A focused stack for data engineering, database management, automation, and modern application development."
           />
           <motion.div
             className="home__skills-grid"
@@ -169,7 +181,7 @@ export default function Home() {
           >
             {featuredSkills.map((skill, i) => (
               <div key={skill.name} variants={itemVariants}>
-                <SkillCard skill={skill} index={i} />
+                <SkillCard skill={skill} index={i} categoryColor={skill.color} />
               </div>
             ))}
           </motion.div>
@@ -182,9 +194,9 @@ export default function Home() {
       <section id="experience" className="section">
         <div className="container">
           <SectionTitle
-            eyebrow="Experience"
-            title="A professional path shaped by data and software"
-            subtitle="Selected experiences that reflect my growth in analysis, systems, and modern product thinking."
+            eyebrow="Professional Experience"
+            title="Career Highlights"
+            subtitle="Selected roles and projects that reflect my growth in data analysis, software engineering, and product delivery."
           />
           <div className="home__timeline-list">
             {experience.slice(0, 4).map((item) => (
@@ -202,9 +214,9 @@ export default function Home() {
       <section id="projects" className="section">
         <div className="container">
           <SectionTitle
-            eyebrow="Projects"
-            title="Selected work that shows how I solve problems"
-            subtitle="A mix of data-focused solutions and software projects designed to be practical and polished."
+            eyebrow="Featured Work"
+            title="Project Portfolio"
+            subtitle="Data-driven solutions and software projects designed with precision, practicality, and professional polish."
           />
           <div className="home__projects-grid">
             {projects.slice(0, 4).map((project, index) => (
@@ -220,9 +232,9 @@ export default function Home() {
       <section id="education" className="section">
         <div className="container">
           <SectionTitle
-            eyebrow="Education"
-            title="Training that supports a thoughtful technical foundation"
-            subtitle="A strong academic base in software engineering and analytical problem solving."
+            eyebrow="Academic Foundation"
+            title="Education & Training"
+            subtitle="A rigorous academic background in software engineering and analytical problem solving."
           />
           <div className="home__edu-grid">
             {education.map((item) => (
@@ -240,9 +252,9 @@ export default function Home() {
       <section id="services" className="section">
         <div className="container">
           <SectionTitle
-            eyebrow="Services"
-            title="Support for data, dashboards, and product-ready execution"
-            subtitle="Flexible help for businesses and founders who want clarity, quality, and reliable delivery."
+            eyebrow="Professional Services"
+            title="What I Deliver"
+            subtitle="Structured support for organizations that value quality, clarity, and dependable execution."
           />
           <div className="home__services-grid">
             {services.slice(0, 6).map((service) => (
@@ -268,7 +280,7 @@ export default function Home() {
             <div className="home__cta-icons">
               <FiCode /><FiBarChart2 /><FiCpu />
             </div>
-            <h2>Let's Build Something Meaningful</h2>
+            <h2>Let's Collaborate on Your Next Project</h2>
             <p>
               Whether you need data insights, reporting, database structure, or a polished app concept, I’m ready to help turn it into something real.
             </p>

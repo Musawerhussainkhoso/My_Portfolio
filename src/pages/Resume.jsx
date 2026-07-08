@@ -30,22 +30,22 @@ export default function Resume() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <FaFileAlt /> Resume
+            <FaFileAlt /> Curriculum Vitae
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            My <span className="gradient-text">CV</span>
+            Professional <span className="gradient-text">Resume</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            A summary of my skills, education, projects, and experience. Download the
-            full PDF below.
+            A structured summary of my qualifications, education, projects, and professional experience.
+            Download the complete PDF below.
           </motion.p>
         </div>
 
@@ -64,9 +64,9 @@ export default function Resume() {
         {/* Highlights */}
         <section className="section">
           <SectionTitle
-            eyebrow="At a Glance"
+            eyebrow="Executive Summary"
             title="Resume Highlights"
-            subtitle="Key takeaways from my professional and academic background."
+            subtitle="Key qualifications drawn from my professional and academic background."
           />
 
           <motion.div
@@ -150,9 +150,9 @@ export default function Resume() {
         <section className="section section--alt">
           <div className="container">
             <SectionTitle
-              eyebrow="Academic"
+              eyebrow="Academic Record"
               title="Relevant Coursework"
-              subtitle="Courses that support my work in software, data, and machine learning."
+              subtitle="Courses that underpin my work in software engineering, data science, and machine learning."
             />
             <motion.div
               className="resume__coursework"
@@ -179,8 +179,8 @@ export default function Resume() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.6 }}
           >
-            <h2>Want the full version?</h2>
-            <p>Download my complete CV in PDF format.</p>
+            <h2>Download the Complete Resume</h2>
+            <p>Access my full curriculum vitae in PDF format for detailed review.</p>
             <Button href="/Musawer_Hussain_CV.pdf" download variant="primary">
               <FaDownload /> Download CV
             </Button>

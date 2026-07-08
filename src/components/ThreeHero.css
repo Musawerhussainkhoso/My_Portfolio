@@ -5,8 +5,7 @@
   height: 100%;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.85;
-  mix-blend-mode: lighten;
+  opacity: 0.72;
 }
 
 .three-hero canvas {
@@ -16,16 +15,15 @@
 }
 
 [data-theme="dark"] .three-hero {
-  opacity: 0.65;
-  mix-blend-mode: screen;
+  opacity: 0.58;
 }
 
 @media (max-width: 768px) {
   .three-hero {
-    opacity: 0.5;
+    opacity: 0.45;
   }
 
   [data-theme="dark"] .three-hero {
-    opacity: 0.35;
+    opacity: 0.32;
   }
 }

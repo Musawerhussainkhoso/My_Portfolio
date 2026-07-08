@@ -31,7 +31,7 @@
   color: #fff;
   background: linear-gradient(120deg, var(--primary-500), var(--primary-600));
   border-color: transparent;
-  box-shadow: 0 6px 18px rgba(31, 111, 235, 0.35);
+  box-shadow: 0 6px 18px rgba(26, 39, 68, 0.30);
 }
 
 .projects__grid {

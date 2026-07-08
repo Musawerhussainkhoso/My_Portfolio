@@ -24,22 +24,22 @@ export default function Projects() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <FaProjectDiagram /> Portfolio
+            <FaProjectDiagram /> Project Showcase
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            My <span className="gradient-text">Projects</span>
+            Selected <span className="gradient-text">Projects</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            A collection of work spanning software engineering, data analysis,
-            and machine learning. Filter by category to explore.
+            A curated collection of work spanning software engineering, data analysis,
+            and machine learning. Filter by category to explore each discipline.
           </motion.p>
         </div>
 

@@ -25,9 +25,13 @@
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--primary-600);
+  letter-spacing: 0.12em;
+  color: var(--accent-600);
   margin-bottom: var(--space-3);
+}
+
+[data-theme="dark"] .section-title .eyebrow {
+  color: var(--accent-400);
 }
 
 .section-title .eyebrow::before,
@@ -37,8 +41,8 @@
   top: 50%;
   width: 24px;
   height: 1px;
-  background: var(--primary-500);
-  opacity: 0.4;
+  background: var(--accent-500);
+  opacity: 0.5;
 }
 
 .section-title .eyebrow::before { left: -32px; }

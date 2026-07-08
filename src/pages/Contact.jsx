@@ -52,22 +52,22 @@ export default function Contact() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <FiMail /> Get in Touch
+            <FiMail /> Contact
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Let's <span className="gradient-text">Connect</span>
+            Get In <span className="gradient-text">Touch</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Have a project, opportunity, or question? I'd love to hear from you.
-            Fill out the form or reach me through any of the channels below.
+            For project inquiries, career opportunities, or professional correspondence —
+            please use the form below or reach me through any of the channels listed.
           </motion.p>
         </div>
 
@@ -78,10 +78,10 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <h2>Ready to work together?</h2>
+          <h2>Ready to Work Together?</h2>
           <p>
-            I'm available for data-focused opportunities, freelance projects, and
-            mobile app ideas. Let's build something practical and meaningful.
+            I am available for data-focused roles, freelance engagements, and collaborative
+            software projects. Let us discuss how I can contribute to your objectives.
           </p>
         </motion.div>
 

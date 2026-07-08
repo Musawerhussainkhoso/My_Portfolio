@@ -27,31 +27,31 @@ export default function Education() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <FaBookOpen /> Academic Journey
+            <FaBookOpen /> Academic Credentials
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            My <span className="gradient-text">Education</span>
+            Education & <span className="gradient-text">Qualifications</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            A formal foundation in software engineering, complemented by hands-on
-            coursework in data and web technologies.
+            A formal foundation in software engineering, supported by rigorous coursework
+            in data science, web technologies, and analytical methods.
           </motion.p>
         </div>
 
         {/* Timeline */}
         <section className="section">
           <SectionTitle
-            eyebrow="Timeline"
+            eyebrow="Academic History"
             title="Educational Background"
-            subtitle="My academic path from pre-engineering to a bachelor's in software engineering."
+            subtitle="My academic progression from pre-engineering through a bachelor's degree in software engineering."
           />
           <Timeline items={education} />
         </section>
@@ -60,9 +60,9 @@ export default function Education() {
         <section className="section section--alt">
           <div className="container">
             <SectionTitle
-              eyebrow="Relevant Coursework"
-              title="Key Courses"
-              subtitle="Subjects that shaped my skills in software engineering, data, and machine learning."
+              eyebrow="Core Curriculum"
+              title="Relevant Coursework"
+              subtitle="Key subjects that established my foundation in software engineering, data analysis, and machine learning."
             />
             <motion.div
               className="education__coursework"

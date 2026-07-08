@@ -47,7 +47,7 @@
   background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
   color: #fff;
   font-size: 1.1rem;
-  box-shadow: 0 4px 14px rgba(31, 111, 235, 0.35);
+  box-shadow: 0 4px 14px rgba(26, 39, 68, 0.25);
 }
 
 /* Desktop links */

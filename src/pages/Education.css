@@ -27,7 +27,7 @@
   width: 36px;
   height: 36px;
   border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, rgba(31, 111, 235, 0.12), rgba(45, 212, 191, 0.12));
+  background: linear-gradient(135deg, rgba(26, 39, 68, 0.08), rgba(201, 162, 39, 0.10));
   color: var(--primary-500);
   font-size: 1rem;
   flex-shrink: 0;
