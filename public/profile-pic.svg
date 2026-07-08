@@ -1,0 +1,42 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern gradient background -->
+  <defs>
+    <linearGradient id="profileGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded rectangle background -->
+  <rect width="320" height="320" rx="50" fill="url(#profileGrad)"/>
+  
+  <!-- Head -->
+  <circle cx="160" cy="90" r="55" fill="#FBD4A6"/>
+  
+  <!-- Hair -->
+  <path d="M105 90C105 55 130 30 160 30C190 30 215 55 215 90L215 110C215 100 205 90 160 88C115 90 105 100 105 110Z" fill="#2C2C2C"/>
+  
+  <!-- Eyes -->
+  <circle cx="140" cy="80" r="7" fill="#2C2C2C"/>
+  <circle cx="180" cy="80" r="7" fill="#2C2C2C"/>
+  <circle cx="142" cy="78" r="3" fill="#FFFFFF"/>
+  <circle cx="182" cy="78" r="3" fill="#FFFFFF"/>
+  
+  <!-- Smile -->
+  <path d="M140 100 Q160 115 180 100" stroke="#2C2C2C" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="145" y="130" width="30" height="25" fill="#FBD4A6"/>
+  
+  <!-- Shoulders & body -->
+  <rect x="100" y="155" width="120" height="140" rx="20" fill="#667eea"/>
+  
+  <!-- Shirt accent -->
+  <rect x="110" y="165" width="100" height="45" rx="10" fill="#764ba2" opacity="0.8"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="130" cy="200" r="6" fill="#f093fb"/>
+  <circle cx="190" cy="220" r="5" fill="#f093fb"/>
+  <circle cx="160" cy="270" r="4" fill="#FBD4A6"/>
+</svg>

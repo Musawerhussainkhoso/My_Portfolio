@@ -1,0 +1,62 @@
+.section-title {
+  margin-bottom: var(--space-6);
+}
+
+.section-title h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--heading);
+  margin-bottom: var(--space-2);
+}
+
+.section-title p {
+  font-size: 1.15rem;
+  color: var(--text-soft);
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.section-title .eyebrow {
+  display: inline-block;
+  position: relative;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary-600);
+  margin-bottom: var(--space-3);
+}
+
+.section-title .eyebrow::before,
+.section-title .eyebrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 1px;
+  background: var(--primary-500);
+  opacity: 0.4;
+}
+
+.section-title .eyebrow::before { left: -32px; }
+.section-title .eyebrow::after { right: -32px; }
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+  }
+
+  .section-title p {
+    font-size: 1rem;
+  }
+
+  .section-title .eyebrow::before,
+  .section-title .eyebrow::after {
+    width: 16px;
+  }
+  .section-title .eyebrow::before { left: -24px; }
+  .section-title .eyebrow::after { right: -24px; }
+}

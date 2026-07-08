@@ -1,0 +1,107 @@
+.resume__download {
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+
+.resume__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+
+.resume__card {
+  padding: var(--space-4);
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.resume__card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-400);
+}
+
+.resume__card h3 {
+  font-size: 1.3rem;
+  margin-bottom: var(--space-2);
+  padding-bottom: var(--space-1);
+  border-bottom: 2px solid var(--surface-border);
+}
+
+.resume__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.resume__list li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+.resume__check {
+  color: var(--accent-500);
+  font-size: 1.1rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.resume__list strong {
+  display: block;
+  color: var(--heading);
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.resume__sub {
+  display: block;
+  color: var(--text-soft);
+  font-size: 0.85rem;
+}
+
+.resume__period {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.1rem;
+}
+
+.resume__skills {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  margin-top: 0.1rem;
+}
+
+/* Coursework */
+.resume__coursework {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* CTA */
+.resume__cta {
+  text-align: center;
+  padding: var(--space-6) var(--space-4);
+}
+
+.resume__cta h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: var(--space-1);
+}
+
+.resume__cta p {
+  color: var(--text-soft);
+  margin-bottom: var(--space-4);
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .resume__grid {
+    grid-template-columns: 1fr;
+  }
+}

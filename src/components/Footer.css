@@ -1,0 +1,147 @@
+.footer {
+  margin-top: var(--space-12);
+  background: var(--bg-alt);
+  border-top: 1px solid var(--surface-border);
+  padding-top: var(--space-8);
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: var(--space-5);
+  padding-bottom: var(--space-6);
+}
+
+/* Brand */
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: var(--space-2);
+}
+
+.footer__logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.footer__tagline {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-2);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  font-size: 1.1rem;
+  color: var(--text-soft);
+  transition: transform var(--transition), color var(--transition),
+    border-color var(--transition), background var(--transition);
+}
+
+.footer__social:hover {
+  transform: translateY(-3px);
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
+  border-color: transparent;
+}
+
+/* Links */
+.footer__links h4,
+.footer__contact h4 {
+  font-size: 1rem;
+  margin-bottom: var(--space-2);
+}
+
+.footer__links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__links a {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  transition: color var(--transition), padding-left var(--transition);
+}
+
+.footer__links a:hover {
+  color: var(--primary-500);
+  padding-left: 0.4rem;
+}
+
+/* Contact */
+.footer__contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__contact svg {
+  color: var(--accent-500);
+  font-size: 0.9rem;
+}
+
+/* Bottom */
+.footer__bottom {
+  border-top: 1px solid var(--surface-border);
+  padding: var(--space-3) 0;
+}
+
+.footer__bottom p {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    text-align: center;
+  }
+
+  .footer__logo {
+    justify-content: center;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+
+  .footer__links ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .footer__contact p {
+    justify-content: center;
+  }
+}
