@@ -50,8 +50,6 @@ export const skillCategories = [
     color: '#a8861f',
     icon: <FiSmartphone />,
     skills: [
-      { name: 'Mobile App Dev', icon: <FaMobileAlt />, level: 82, category: 'mobile' },
-      { name: 'React', icon: <FiCode />, level: 88, category: 'mobile' },
       { name: 'JavaScript/Web', icon: <FiCpu />, level: 85, category: 'mobile' },
     ],
   },
