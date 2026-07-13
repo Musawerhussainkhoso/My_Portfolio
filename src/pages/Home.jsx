@@ -6,6 +6,7 @@ import ProjectCard from '../components/ProjectCard';
 import SectionTitle from '../components/SectionTitle';
 import SkillCard from '../components/SkillCard';
 import ThreeHero from '../components/ThreeHero';
+import cvFile from '../assets/Musawer Hussain cv.pdf';
 import { education } from '../data/education';
 import { experience } from '../data/experience';
 import { projects } from '../data/projects';
@@ -92,7 +93,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <Button href="/Musawer_Hussain_CV.pdf" download variant="primary">
+              <Button href={cvFile} download variant="primary">
                 <FaDownload /> Download CV
               </Button>
               <Button to="/contact" variant="ghost">
@@ -106,7 +107,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.8 }}
             >
-              <a href="https://github.com/musawerhussain" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/Musawerhussainkhoso" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <FaGithub />
               </a>
               <a href="https://linkedin.com/in/musawerhussain" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -286,12 +287,12 @@ export default function Home() {
             </p>
             <div className="home__cta-actions">
               <Button to="/contact" variant="primary">Get in Touch <FaArrowRight /></Button>
-              <Button href="/Musawer_Hussain_CV.pdf" download variant="ghost">
+              <Button href={cvFile} download variant="ghost">
                 <FaDownload /> Download CV
               </Button>
             </div>
             <div className="home__contact-details">
-              <span><FaEnvelope /> musawerhussain@example.com</span>
+              <span><FaEnvelope /> musawerhussain10@gmail.com</span>
               <span><FaMapMarkerAlt /> Hyderabad, Pakistan</span>
             </div>
           </motion.div>

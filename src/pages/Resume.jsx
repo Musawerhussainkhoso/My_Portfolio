@@ -3,6 +3,7 @@ import { FaDownload, FaFileAlt } from 'react-icons/fa';
 import { FiCheckCircle } from 'react-icons/fi';
 import Button from '../components/Button';
 import SectionTitle from '../components/SectionTitle';
+import cvFile from '../assets/Musawer Hussain cv.pdf';
 import { skillCategories } from '../data/skills.jsx';
 import { education, coursework } from '../data/education';
 import { experience } from '../data/experience';
@@ -56,7 +57,7 @@ export default function Resume() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <Button href="/Musawer_Hussain_CV.pdf" download variant="primary">
+          <Button href={cvFile} download variant="primary">
             <FaDownload /> Download CV
           </Button>
         </motion.div>
@@ -181,7 +182,7 @@ export default function Resume() {
           >
             <h2>Download the Complete Resume</h2>
             <p>Access my full curriculum vitae in PDF format for detailed review.</p>
-            <Button href="/Musawer_Hussain_CV.pdf" download variant="primary">
+            <Button href={cvFile} download variant="primary">
               <FaDownload /> Download CV
             </Button>
           </motion.div>

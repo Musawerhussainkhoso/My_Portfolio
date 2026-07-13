@@ -3,6 +3,7 @@ import { FaDownload, FaArrowRight } from 'react-icons/fa';
 import { FiTarget, FiCode, FiBarChart2, FiHeart, FiZap } from 'react-icons/fi';
 import Button from '../components/Button';
 import SectionTitle from '../components/SectionTitle';
+import cvFile from '../assets/Musawer Hussain cv.pdf';
 import './About.css';
 
 const stats = [
@@ -173,7 +174,7 @@ export default function About() {
               <p>Review my project portfolio, technical skills, or download my full curriculum vitae.</p>
               <div className="about__cta-actions">
                 <Button to="/projects" variant="primary">View Projects <FaArrowRight /></Button>
-                <Button href="/Musawer_Hussain_CV.pdf" download variant="ghost">
+                <Button href={cvFile} download variant="ghost">
                   <FaDownload /> Download CV
                 </Button>
               </div>

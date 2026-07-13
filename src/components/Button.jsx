@@ -15,6 +15,8 @@ export default function Button({
   onClick,
   type = 'button',
   download,
+  target,
+  rel,
   className = '',
   ...rest
 }) {
@@ -42,8 +44,8 @@ export default function Button({
         <a
           href={href}
           className={classes}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={target ?? (download ? undefined : '_blank')}
+          rel={rel ?? (download ? undefined : 'noopener noreferrer')}
           download={download}
           {...rest}
         >

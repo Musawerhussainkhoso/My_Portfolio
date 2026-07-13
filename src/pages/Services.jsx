@@ -3,6 +3,7 @@ import { FaDownload } from 'react-icons/fa';
 import { FiGrid } from 'react-icons/fi';
 import SectionTitle from '../components/SectionTitle';
 import Button from '../components/Button';
+import cvFile from '../assets/Musawer Hussain cv.pdf';
 import { services } from '../data/services.jsx';
 import './Services.css';
 
@@ -91,7 +92,7 @@ export default function Services() {
             </p>
             <div className="services__cta-actions">
               <Button to="/contact" variant="primary">Get in Touch</Button>
-              <Button href="/Musawer_Hussain_CV.pdf" download variant="ghost">
+              <Button href={cvFile} download variant="ghost">
                 <FaDownload /> Download CV
               </Button>
             </div>

@@ -13,9 +13,9 @@ const quickLinks = [
 ];
 
 const socials = [
-  { href: 'https://github.com/musawerhussain', icon: <FaGithub />, label: 'GitHub' },
+  { href: 'https://github.com/Musawerhussainkhoso', icon: <FaGithub />, label: 'GitHub' },
   { href: 'https://linkedin.com/in/musawerhussain', icon: <FaLinkedin />, label: 'LinkedIn' },
-  { href: 'mailto:musawerhussain@example.com', icon: <FaEnvelope />, label: 'Email' },
+  { href: 'mailto:musawerhussain10@gmail.com', icon: <FaEnvelope />, label: 'Email' },
 ];
 
 export default function Footer() {
@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="footer__contact">
           <h4>Get in Touch</h4>
           <p><FaMapMarkerAlt /> Pakistan</p>
-          <p><FaEnvelope /> musawerhussain@example.com</p>
+          <p><FaEnvelope /> musawerhussain10@gmail.com</p>
         </div>
       </div>
 
