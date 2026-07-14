@@ -56,7 +56,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Software Engineer, Data Analyst &amp; ML Practitioner
+              Software Engineer · Data Analyst · AI Practitioner
             </motion.p>
 
             <motion.div
@@ -84,7 +84,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              I build practical solutions with SQL, PostgreSQL, Python, Claude, Excel, Power BI, and machine learning for analytics, reporting, and polished software outcomes.
+              I design professional software solutions and analytics systems using SQL, PostgreSQL, Python, Power BI, Excel, Claude, and machine learning to deliver reliable business value.
             </motion.p>
 
             <motion.div
