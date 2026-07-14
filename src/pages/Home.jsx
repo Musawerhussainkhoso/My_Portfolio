@@ -23,7 +23,7 @@ const itemVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
 };
 
-const roles = ['SQL & Python', 'Data Analysis', 'Mobile App Ideas', 'Power BI'];
+const roles = ['SQL & Python', 'Data Analysis', 'Machine Learning', 'Claude & AI'];
 
 export default function Home() {
   return (
@@ -56,7 +56,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Software Engineer &amp; Data Analyst
+              Software Engineer, Data Analyst &amp; ML Practitioner
             </motion.p>
 
             <motion.div
@@ -84,7 +84,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              I build practical solutions with SQL, PostgreSQL, Python, Dart, MongoDB, Excel, and Power BI for analytics, reporting, and modern app ideas.
+              I build practical solutions with SQL, PostgreSQL, Python, Claude, Excel, Power BI, and machine learning for analytics, reporting, and polished software outcomes.
             </motion.p>
 
             <motion.div
@@ -110,7 +110,7 @@ export default function Home() {
               <a href="https://github.com/Musawerhussainkhoso" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/musawerhussain" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/musawer-hussain-1a899a2b0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FaLinkedin />
               </a>
             </motion.div>
@@ -142,10 +142,10 @@ export default function Home() {
           <div className="home__about-grid">
             <div className="glass home__about-card">
               <p>
-                I am a versatile developer and analyst focused on turning data into clear, usable outcomes. My work combines database thinking, analytics, and practical product execution so the final result is not just functional but valuable.
+                I am a professional software engineer and data analyst focused on delivering clean, reliable solutions across analytics, databases, and AI-powered workflows.
               </p>
               <p>
-                From reporting and automation to app concepts and structured data systems, I enjoy building work that feels polished, efficient, and easy to trust.
+                From SQL and PostgreSQL to Excel, Power BI, Claude, and machine learning, I create work that is practical, polished, and designed to make decisions faster.
               </p>
             </div>
             <div className="glass home__about-card">

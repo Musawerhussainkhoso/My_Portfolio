@@ -14,7 +14,7 @@ const quickLinks = [
 
 const socials = [
   { href: 'https://github.com/Musawerhussainkhoso', icon: <FaGithub />, label: 'GitHub' },
-  { href: 'https://linkedin.com/in/musawerhussain', icon: <FaLinkedin />, label: 'LinkedIn' },
+  { href: 'https://www.linkedin.com/in/musawer-hussain-1a899a2b0/', icon: <FaLinkedin />, label: 'LinkedIn' },
   { href: 'mailto:musawerhussain10@gmail.com', icon: <FaEnvelope />, label: 'Email' },
 ];
 
@@ -28,7 +28,7 @@ export default function Footer() {
             <span>Musawer <span className="gradient-text">Hussain</span></span>
           </Link>
           <p className="footer__tagline">
-            SQL · Python · Dart · Power BI
+            Python · Power BI · Excel · ML · Claude
           </p>
           <div className="footer__socials">
             {socials.map((s) => (

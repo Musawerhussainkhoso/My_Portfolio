@@ -1,5 +1,5 @@
 import { SiPython, SiPostgresql, SiMongodb, SiDart } from 'react-icons/si';
-import { FaFileExcel, FaChartBar, FaMobileAlt } from 'react-icons/fa';
+import { FaFileExcel, FaChartBar, FaMobileAlt, FaBrain, FaRobot } from 'react-icons/fa';
 import { FiCpu, FiPackage, FiDatabase, FiCode, FiBarChart2, FiSmartphone } from 'react-icons/fi';
 
 export const skillCategories = [
@@ -19,8 +19,8 @@ export const skillCategories = [
   {
     id: 'programming',
     eyebrow: 'Languages',
-    title: 'Programming Languages',
-    subtitle: 'Core languages for backend, automation, and mobile development',
+    title: 'Programming & Automation',
+    subtitle: 'Core languages and libraries for backend, analytics, and automation',
     color: '#c9a227',
     icon: <FiCode />,
     skills: [
@@ -32,25 +32,27 @@ export const skillCategories = [
   {
     id: 'analytics',
     eyebrow: 'Analytics',
-    title: 'Data & Analytics',
-    subtitle: 'Data visualization, reporting, and business intelligence',
+    title: 'BI & Reporting',
+    subtitle: 'Analytics tools for dashboards, reporting, and insight delivery',
     color: '#4a5f82',
     icon: <FiBarChart2 />,
     skills: [
-      { name: 'Excel', icon: <FaFileExcel />, level: 86, category: 'analytics' },
-      { name: 'Power BI', icon: <FaChartBar />, level: 84, category: 'analytics' },
-      { name: 'Data Visualization', icon: <FiCpu />, level: 90, category: 'analytics' },
+      { name: 'Excel', icon: <FaFileExcel />, level: 88, category: 'analytics' },
+      { name: 'Power BI', icon: <FaChartBar />, level: 86, category: 'analytics' },
+      { name: 'Data Visualization', icon: <FiBarChart2 />, level: 90, category: 'analytics' },
     ],
   },
   {
-    id: 'mobile',
-    eyebrow: 'Development',
-    title: 'Mobile & Web',
-    subtitle: 'Cross-platform mobile app development and modern frameworks',
+    id: 'ai',
+    eyebrow: 'AI & ML',
+    title: 'Machine Learning & AI',
+    subtitle: 'Modern AI tools, ML modeling, and intelligent automation',
     color: '#a8861f',
-    icon: <FiSmartphone />,
+    icon: <FaBrain />,
     skills: [
-      { name: 'JavaScript/Web', icon: <FiCpu />, level: 85, category: 'mobile' },
+      { name: 'Machine Learning', icon: <FaBrain />, level: 86, category: 'ai' },
+      { name: 'Claude', icon: <FaRobot />, level: 84, category: 'ai' },
+      { name: 'Data Modeling', icon: <FiCpu />, level: 82, category: 'ai' },
     ],
   },
 ];
@@ -59,9 +61,9 @@ export const featuredSkills = [
   { name: 'SQL', icon: <FiDatabase />, level: 92, color: '#1a2744', category: 'databases' },
   { name: 'Python', icon: <SiPython />, level: 92, color: '#c9a227', category: 'programming' },
   { name: 'PostgreSQL', icon: <SiPostgresql />, level: 88, color: '#4a5f82', category: 'databases' },
-  { name: 'Power BI', icon: <FaChartBar />, level: 84, color: '#a8861f', category: 'analytics' },
-  { name: 'Python Libraries', icon: <FiPackage />, level: 90, color: '#c9a227', category: 'programming' },
-  { name: 'Excel', icon: <FaFileExcel />, level: 86, color: '#4a5f82', category: 'analytics' },
+  { name: 'Power BI', icon: <FaChartBar />, level: 86, color: '#a8861f', category: 'analytics' },
+  { name: 'Machine Learning', icon: <FaBrain />, level: 86, color: '#a8861f', category: 'ai' },
+  { name: 'Claude', icon: <FaRobot />, level: 84, color: '#a8861f', category: 'ai' },
 ];
 
 export { default as profileImage } from './mypic.jpg';

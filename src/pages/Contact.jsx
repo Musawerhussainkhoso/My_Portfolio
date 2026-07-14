@@ -10,7 +10,7 @@ import './Contact.css';
 const contactInfo = [
   { icon: <FaEnvelope />, label: 'Email', value: 'musawerhussain10@gmail.com', href: 'mailto:musawerhussain10@gmail.com' },
   { icon: <FaGithub />, label: 'GitHub', value: 'github.com/Musawerhussainkhoso', href: 'https://github.com/Musawerhussainkhoso' },
-  { icon: <FaLinkedin />, label: 'LinkedIn', value: 'linkedin.com/in/musawerhussain', href: 'https://linkedin.com/in/musawerhussain' },
+  { icon: <FaLinkedin />, label: 'LinkedIn', value: 'linkedin.com/in/musawer-hussain-1a899a2b0', href: 'https://www.linkedin.com/in/musawer-hussain-1a899a2b0/' },
   { icon: <FaMapMarkerAlt />, label: 'Location', value: 'Pakistan', href: null },
 ];
 

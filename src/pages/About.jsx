@@ -18,19 +18,19 @@ const cards = [
     icon: <FiCode />,
     title: 'Data & Programming Journey',
     description:
-      'My work started with SQL, Python, and databases, then grew into automation, data analysis, and mobile app ideas. I enjoy building practical solutions that are easy to understand and useful in real life.',
+      'My work started with SQL, Python, and databases, then grew into analytics, automation, and machine learning. I build tools that are accurate, repeatable, and ready for real use.',
   },
   {
     icon: <FiBarChart2 />,
     title: 'Analytics & Reporting Focus',
     description:
-      'I like turning raw information into clear insights using Python, PostgreSQL, MongoDB, Excel, and Power BI. Clean data, thoughtful dashboards, and dependable reporting are what I care about most.',
+      'I like turning raw information into clear insights using Python, PostgreSQL, MongoDB, Excel, Power BI, and Claude. Clean data, thoughtful dashboards, and dependable reporting are what I care about most.',
   },
   {
     icon: <FiTarget />,
     title: 'Career Goals',
     description:
-      'I am growing toward opportunities in data analytics, database work, Python-based solutions, and mobile app development. I want to contribute with strong fundamentals and keep learning through real projects.',
+      'I am focused on opportunities that combine software engineering, data analytics, machine learning, and business intelligence. I want to contribute with strong technical fundamentals and modern delivery.',
   },
   {
     icon: <FiHeart />,
@@ -111,20 +111,13 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <p>
-              I'm <strong>Musawer Hussain</strong>, a data-focused developer and analyst
-              from Pakistan with a strong interest in SQL, Python, databases, reporting,
-              and mobile app development. I enjoy using practical tools to solve everyday
-              problems with clear, measurable results.
+              I'm <strong>Musawer Hussain</strong>, a professional software engineer and data analyst with proven expertise in Python, machine learning, SQL, PostgreSQL, MongoDB, Excel, Power BI, and Claude.
             </p>
             <p>
-              I like working across the full problem-solving flow: collecting and cleaning
-              data, building reliable database solutions, creating useful dashboards, and
-              turning ideas into real products that people can actually use.
+              I deliver reliable, production-aware solutions that combine data engineering, analytics, automation, and AI with clear business value.
             </p>
             <p>
-              I'm currently open to <strong>data-related opportunities, freelance projects,
-              and mobile app ideas</strong> — anything that lets me learn, contribute, and
-              create value.
+              I'm seeking roles where I can contribute as a technical problem solver in data analytics, ML, reporting, and software delivery.
             </p>
           </motion.div>
         </section>
