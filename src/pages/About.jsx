@@ -8,7 +8,7 @@ import './About.css';
 
 const stats = [
   { value: '4+', label: 'Years of Study' },
-  { value: '8+', label: 'Projects Built' },
+  { value: '9+', label: 'Projects Built' },
   { value: '20+', label: 'Technologies' },
   { value: '3', label: 'Specializations' },
 ];

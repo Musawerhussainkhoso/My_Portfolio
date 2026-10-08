@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Insurance Cost Intelligence Studio',
+    category: 'Machine Learning',
+    description:
+      'An actuarial regression intelligence platform and interactive Streamlit studio that predicts healthcare costs using log-transformed linear regression, feature engineering, 5-fold cross-validation (R² = 0.82), and scenario simulations.',
+    technologies: ['Python', 'Scikit-learn', 'Streamlit', 'Plotly', 'Pandas', 'Linear Regression'],
+    github: 'https://github.com/Musawerhussainkhoso/Machine-Learning-Journey-/tree/main/Supervised%20Learning',
+    demo: 'https://github.com/Musawerhussainkhoso/Machine-Learning-Journey-/tree/main/Supervised%20Learning',
+  },
+  {
     title: 'Crime Incident Reporting System',
     category: 'Data Analysis',
     description:
